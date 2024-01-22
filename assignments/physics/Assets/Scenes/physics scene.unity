@@ -286,7 +286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f0760b6957f7654fba169a2e3079b3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.859999
+      value: 7.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f0760b6957f7654fba169a2e3079b3a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2086,19 +2086,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3594121549067196484, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.52
+      value: 3.33
       objectReference: {fileID: 0}
     - target: {fileID: 3594121549067196484, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.73
+      value: -23.91
       objectReference: {fileID: 0}
     - target: {fileID: 3594121549067196484, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99924755
       objectReference: {fileID: 0}
     - target: {fileID: 3594121549067196484, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.038786054
       objectReference: {fileID: 0}
     - target: {fileID: 3594121549067196484, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2110,7 +2110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3594121549067196484, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -4.446
       objectReference: {fileID: 0}
     - target: {fileID: 3594121549067196484, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2122,7 +2122,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3656191343219637738, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_Mass
-      value: 0.6
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656191343219637738, guid: f1490b2851949c5418a06f39435181f6, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3656191343219637738, guid: f1490b2851949c5418a06f39435181f6, type: 3}
       propertyPath: m_Constraints
