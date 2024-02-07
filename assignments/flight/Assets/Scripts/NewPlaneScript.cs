@@ -89,8 +89,8 @@ public class NewPlaneScript : MonoBehaviour
             GamePlayPlane.speed -= 0.0175f * Time.deltaTime;
             if (GamePlayPlane.speed < normalSpeed) GamePlayPlane.speed = normalSpeed;
         }
-        turnSpeedH = GamePlayPlane.speed * (50f / 0.09f);
-        turnSpeedV = GamePlayPlane.speed * (50f / 0.09f);
+        turnSpeedH = 50f + ((GamePlayPlane.speed - 0.09f) * 100f);
+        turnSpeedV = 50f + ((GamePlayPlane.speed - 0.09f) * 100f);
     }
 
     public void DisplaySpeed()
@@ -105,7 +105,7 @@ public class NewPlaneScript : MonoBehaviour
             Destroy(other.gameObject);
             score++; // score = score + 1;
             scoreText.text = "Score: " + score.ToString();
-            Debug.Log("Ring gotten!");
+            //Debug.Log("Ring gotten!");
             GamePlayPlane.speed += 0.05f;
         }
     }

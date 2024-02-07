@@ -670,8 +670,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5911126, y: 0.52641106, z: 0.75881976}
-  m_Center: {x: -0.00008440018, y: -0.035382748, z: 0.45062628}
+  m_Size: {x: 2.5911126, y: 0.52641106, z: 2.4641762}
+  m_Center: {x: -0.00008440018, y: -0.035382748, z: -0.40205193}
 --- !u!54 &4399172713580338112
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -713,10 +713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSpeed: 0.09
   boostSpeed: 0.2
-  brakeSpeed: 0.01
   turnSpeedV: 50
-  turnSpeedH: 40
-  cameraParent: {fileID: 3625211034356505991}
+  turnSpeedH: 50
   playerModel: {fileID: 5794928394548282246}
   GamePlayPlane: {fileID: 4308858212366407852}
   speedText: {fileID: 0}
