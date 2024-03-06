@@ -12192,6 +12192,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5166050114081967117, guid: 8eceb63f1f81cbc429a5d2760e2765fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166050114081967117, guid: 8eceb63f1f81cbc429a5d2760e2765fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166050114081967117, guid: 8eceb63f1f81cbc429a5d2760e2765fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166050114081967117, guid: 8eceb63f1f81cbc429a5d2760e2765fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5166050114096034500, guid: 8eceb63f1f81cbc429a5d2760e2765fd, type: 3}
       propertyPath: m_Name
       value: PlayerHealthBar
