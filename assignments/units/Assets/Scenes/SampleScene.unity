@@ -3981,6 +3981,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.43
       objectReference: {fileID: 0}
+    - target: {fileID: 3949049272371481577, guid: ec41dfe88769aad4584c4c372c55f3d4, type: 3}
+      propertyPath: minerCost
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949049272371481577, guid: ec41dfe88769aad4584c4c372c55f3d4, type: 3}
+      propertyPath: fighterCost
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6829112894614996669, guid: ec41dfe88769aad4584c4c372c55f3d4, type: 3}
       propertyPath: m_Name
       value: Home Base

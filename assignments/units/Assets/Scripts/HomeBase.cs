@@ -17,8 +17,8 @@ public class HomeBase : MonoBehaviour
     public GameObject minerPrefab;
     public GameObject fighterPrefab;
 
-    public float fighterCost = 100;
-    public float minerCost = 100;
+    public float fighterCost;
+    public float minerCost;
     
     // Start is called before the first frame update
     void Start()
