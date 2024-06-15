@@ -158,7 +158,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                yVel = -2f;  
+                yVel = -2f;
             }
             longJumpReady = true;
         }
