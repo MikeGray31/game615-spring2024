@@ -10157,6 +10157,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1458928839286324361}
     m_Modifications:
+    - target: {fileID: 1630454037710890976, guid: a8947bbc7c9bfcf4d9a9defff0a4c5a1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5851821676612669727}
+    - target: {fileID: 1630454037710890976, guid: a8947bbc7c9bfcf4d9a9defff0a4c5a1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadTitleScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630454037710890976, guid: a8947bbc7c9bfcf4d9a9defff0a4c5a1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManagerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3217117478080842285, guid: a8947bbc7c9bfcf4d9a9defff0a4c5a1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -29678,6 +29690,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1736313912179252034, guid: 6660e2317d6c14049824628e436bddb4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379203326613636060, guid: 6660e2317d6c14049824628e436bddb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5851821676612669727}
+    - target: {fileID: 5379203326613636060, guid: 6660e2317d6c14049824628e436bddb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadTitleScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379203326613636060, guid: 6660e2317d6c14049824628e436bddb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManagerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31789,6 +31817,18 @@ PrefabInstance:
       value: ExplainControls
       objectReference: {fileID: 0}
     - target: {fileID: 1061579594431450305, guid: a00088dd56552c24c90ac1c728231cc7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManagerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234770396434935445, guid: a00088dd56552c24c90ac1c728231cc7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5851821676612669727}
+    - target: {fileID: 6234770396434935445, guid: a00088dd56552c24c90ac1c728231cc7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadTitleScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234770396434935445, guid: a00088dd56552c24c90ac1c728231cc7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManagerScript, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -46818,10 +46858,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8140883928999133852}
   - {fileID: 179615137}
   - {fileID: 1733803808}
   - {fileID: 1662892037}
-  - {fileID: 8140883928999133852}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -48908,7 +48948,7 @@ PrefabInstance:
       objectReference: {fileID: 6459971227230752899}
     - target: {fileID: 6472918514237718837, guid: 75babae861bbce24fa9794e4d877d82b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -101.68
+      value: -101.25
       objectReference: {fileID: 0}
     - target: {fileID: 6472918514237718837, guid: 75babae861bbce24fa9794e4d877d82b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -48916,7 +48956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6472918514237718837, guid: 75babae861bbce24fa9794e4d877d82b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.59
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 6472918514237718837, guid: 75babae861bbce24fa9794e4d877d82b, type: 3}
       propertyPath: m_LocalRotation.w

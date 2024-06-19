@@ -44,6 +44,7 @@ public class SwordWeapon : Weapon
         if (Input.GetKey(KeyCode.Mouse0))
         {
             attacking = true;
+            //Debug.Log("Mouse down => " + (Input.GetKeyDown(KeyCode.Mouse0)) + " / currentAttackStatus = " + currentAttackStatus);
             if (Input.GetKeyDown(KeyCode.Mouse0) && currentAttackStatus == CurrentAttackStatus.NOTATTACKING)
             {
                 attackCharge = minAttackCharge;
@@ -54,15 +55,15 @@ public class SwordWeapon : Weapon
                 attackCharge = Mathf.Clamp(attackCharge + 2f * Time.deltaTime, 1f, maxAttackCharge);
             }
         }
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+        if (Input.GetKeyUp(KeyCode.Mouse0)  && currentAttackStatus == CurrentAttackStatus.NOTATTACKING && attacking)
         {
             //Debug.Log("Sword released! Attack power = " + attackCharge);
             swordAnimator.SetTrigger("SwordReleased");
             currentAttackStatus = CurrentAttackStatus.STARTED;
+            StartCoroutine(EnsureAttackFinishes());
         }
         else if(!attacking)
         {
-            
             targetPosition = attackStartPosition;
             targetPosition.y = attackStartPosition.y + (vAxis * maxDistanceFromCenter);
         }
@@ -70,9 +71,18 @@ public class SwordWeapon : Weapon
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
     }
 
+    IEnumerator EnsureAttackFinishes()
+    {
+        yield return new WaitForSeconds(1.5f);
+        swordAnimator.ResetTrigger("SwordReleased");
+        attacking = false;
+        currentAttackStatus = CurrentAttackStatus.NOTATTACKING;
+    }
+
     public void FinishSwordPoke()
     {
         //Debug.Log("Attack animation ended!");
+        swordAnimator.ResetTrigger("SwordReleased");
         attacking = false;
         currentAttackStatus = CurrentAttackStatus.NOTATTACKING;
     }
@@ -80,7 +90,7 @@ public class SwordWeapon : Weapon
     public override void PlayAttackGame(PlayerController player, EnemyController target)
     {
         //Debug.Log("This is the sword attack game playing!");
-        Debug.Log("Active? " + gameObject.activeInHierarchy);
+        //Debug.Log("Active? " + gameObject.activeInHierarchy);
         if (player != null  && target != null) this.AttackCoroutine = StartCoroutine(AttackGameCoroutine(player, target));
     }
 
@@ -100,6 +110,7 @@ public class SwordWeapon : Weapon
         SetAttackGameActiveState(true);
         yield return new WaitForSeconds(weaponGameTimeLimit);
         SetAttackGameActiveState(false);
+        currentAttackStatus = CurrentAttackStatus.NOTATTACKING;
         attacking = false;
 
         //Debug.Log("Sword Attack finished!  Moving back to position!");
@@ -135,10 +146,10 @@ public class SwordWeapon : Weapon
     {
         if (attacking)
         {
-            Debug.Log("hit something!");
+            //Debug.Log("hit something!");
             if (collision.gameObject.name == "Shield" && currentAttackStatus != CurrentAttackStatus.HIT)
             {
-                Debug.Log("Hit a shield!");
+                //Debug.Log("Hit a shield!");
                 currentAttackStatus = CurrentAttackStatus.BLOCKED;
                 swordAnimator.Play("SwordPokeRecoil");
 

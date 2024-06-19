@@ -83,6 +83,11 @@ public class GameManagerScript : MonoBehaviour
         Resume();
     }
 
+    public void LoadTitleScreen()
+    {
+        SceneManager.LoadScene("StartMenuScene");
+    }
+
     public void QuitGame()
     {
         //Debug.Log("Quitting game...");

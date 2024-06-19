@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartMenuManager : MonoBehaviour
 {
     public string LoadThisFromStart;
+    public GameObject ControlsExplanation;
 
 
     public void StartTheGame()
@@ -16,5 +17,17 @@ public class StartMenuManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ExplainControls()
+    {
+        ControlsExplanation.SetActive(true);
+        StartCoroutine(WaitForExplainControlsToDeactivate());
+    }
+
+    IEnumerator WaitForExplainControlsToDeactivate()
+    {
+        yield return new WaitUntil(() => Input.anyKeyDown);
+        ControlsExplanation.SetActive(false);
     }
 }

@@ -56,7 +56,7 @@ public class Weapon : MonoBehaviour
         yield return null;
     }
 
-        public void ResetWeaponGame()
+    public void ResetWeaponGame()
     {
         this.attackGameFinished = false;
     }
@@ -78,7 +78,6 @@ public class Weapon : MonoBehaviour
         if (collision.gameObject.GetComponent<UnitScript>())
         {
             UnitScript hitUnit = collision.gameObject.GetComponent<UnitScript>();
-            
         }
     }
 
